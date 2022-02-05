@@ -1,8 +1,15 @@
 import { styled, VariantProps } from '../theme/stitches.config';
 
 export const StyledTooltipTrigger = styled('div', {
-  width: 'max-content',
-  display: 'inherit'
+  // width: 'max-content',
+  display: 'inherit',
+  border: '1px solid red',
+  position: 'absolute',
+  top: '15%',
+  // left: '5%',
+  padding: 'inherit',
+  // width: '85%',
+  // height: '100%',
 });
 
 export const StyledTooltipArrow = styled('span', {

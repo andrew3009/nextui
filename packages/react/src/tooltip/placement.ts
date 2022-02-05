@@ -161,21 +161,21 @@ export const getIconPlacement = (
       transform: 'translate(8%, 100%) rotate(45deg)'
     },
     bottom: {
-      top: `0px`,
+      top: '0px',
       right: 'auto',
       left: '50%',
       bottom: 'auto',
       transform: 'translate(-50%, -100%) rotate(225deg)'
     },
     bottomStart: {
-      top: `0px`,
+      top: '0px',
       right: 'auto',
       left: '8%',
       bottom: 'auto',
       transform: 'translate(8%, -100%) rotate(225deg)'
     },
     bottomEnd: {
-      top: `0px`,
+      top: '0px',
       right: '8%',
       left: 'auto',
       bottom: 'auto',

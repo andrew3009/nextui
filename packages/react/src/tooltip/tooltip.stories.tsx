@@ -26,13 +26,37 @@ const Container = ({ children }: any) => (
 
 export const Default = () => {
   return (
-    <Container>
-      <Tooltip content={'Developers love Next.js'}>
-        <Button auto flat>
-          Do hover here
+    <Grid.Container gap={1} css={{ padding: '3rem' }}>
+      {/* <Container> */}
+      {/* <Tooltip content={'Developers love Next.js'} placement="top">
+        <Button size="sm">
+          Hover me
         </Button>
-      </Tooltip>
-    </Container>
+      </Tooltip> */}
+      <Grid xs={3} sm={1} md={0.8} css={{ minHeight: 80, minWidth: 60, position: 'relative' }} alignItems="center">
+        <Tooltip content={'Developers love Next.js'}>
+          <Button css={{ bg: "$primary", minWidth: 60, height: "80%", width: "100%", overflow: 'inherit' }} size="sm">
+            Hover me
+          </Button>
+        </Tooltip>
+      </Grid>
+      <Grid xs={3} sm={1} md={0.8} css={{ minHeight: 80, minWidth: 60 }} alignItems="center">
+        <Button css={{ bg: "$primary", minWidth: 60, height: "80%", width: "100%" }} style={{ minWidth: 60, width: "100%", height: "80%" }}>
+          Hover me
+        </Button>
+      </Grid>
+      <Grid xs={3} sm={1} md={0.8} css={{ minHeight: 80, minWidth: 60 }} alignItems="center">
+        <Button css={{ bg: "$primary", minWidth: 60, height: "80%", width: "100%" }}>
+          Hover me
+        </Button>
+      </Grid>
+      <Grid xs={3} sm={1} md={0.8} css={{ minHeight: 80, minWidth: 60 }} alignItems="center">
+        <Button css={{ bg: "$primary", minWidth: 60, height: "80%", width: "100%" }} style={{ minWidth: 60, width: "100%", height: "80%" }}>
+          Hover me
+        </Button>
+      </Grid>
+      {/* </Container> */}
+    </Grid.Container >
   );
 };
 
